@@ -1,19 +1,20 @@
-## How can you implement shared functionality across a component tree?
+# Project Summary:
 
-I can implement shared functionality across a component tree using React Context API, custom hooks, or Redux.
+## Frontend :
 
-- React Context API: It allows for the creation of a centralized context that provides shared state or functions to any component within the tree, effectively avoiding prop drilling
+- The 2 Questions answerd in **README.md** file of frontend **_frontend\README.md_**
+- Data fetched and Search functionality implemented
+- For posting a new cards <button>Submit a request</button> button is used of Navbar
 
-- Custom hooks: It offers a way to encapsulate reusable logic, enabling the same functionality to be easily shared among multiple components without redundancy.
+## Backend :
 
-- Redux: It handles sharing by maintaining a single global state that can be accessed and modified by any component in the application through actions and reducers
+- By visiting [http://localhost:5000/ping](http://localhost:5000/ping) we can check is the server running locally
+- Card Model is created and full filled all the requirement in addition,
+- - the **Title** is required unique cause it will be used for **_`GET /cards/:title`_**
+- **3 API endpoints** built as per requirment
+- instructions on how to set up and run the project locally is written in **README.md** file of backend **_backend\README.md_** and also in this **README.md** file as bellow,
 
-## Why is the useState hook appropriate for handling state in a complex component?
-
-- The useState hook is appropriate for managing states in a complex component because it provides a simple and easy way to declare state variables.
-- It returns a state variable and a function to update that variable, allowing components to re-render when the state changes.
-
-# Instructions for set up and run the project locally
+## Instructions for set up and run the project locally
 
 1. **Clone the Repository:**
    ```
@@ -40,20 +41,7 @@ I can implement shared functionality across a component tree using React Context
 
 4. **Run the project locally:**
 
-- After successfull installation of node modules now just run the command **_npm run dev_** in the terminals(individually for both frontend & backend)
-<!--
-- `buildHelpCenter/`
-  - `backend/`
-    - `components/`
-      - `Header.js`
-      - `Footer.js`
-    - `pages/`
-      - `Home.js`
-      - `About.js`
-    - `App.js`
-    - `index.js`
-  - `public/`
-    - `index.html`
-    - `favicon.ico`
-  - `package.json`
-  - `README.md` -->
+- After successfull installation of node modules now just run the command **_npm run dev_** in the terminals(individually for both frontend & backend). So run command (**in both frontend & backend terminal**):
+  ```
+  npm run dev
+  ```
